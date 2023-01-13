@@ -301,3 +301,65 @@ header > ul > li > div > a {
 .Lanthanides > div:nth-child(2) > p:nth-child(3) {
   font-size: 8px;
 }
+/* Actinides */
+.Actinides {
+  height: 88px;
+  background-color: #FBE7D6;
+  width: 88px;
+  border-radius: 6px;
+}
+.Actinides > div:nth-child(1) > p {
+  padding-left: 6px;
+  padding-top: 6px;
+  color: #B83E1D;
+  font-size: 14px;
+  font-weight: bold;
+}
+.Actinides > div:nth-child(2) {
+  text-align: center;
+}
+.Actinides > div:nth-child(2) > p {
+  color: #B83E1D;
+}
+.Actinides> div:nth-child(2) > p:nth-child(1) {
+  font-size: 28px;
+  font-weight: 600;
+}
+.Actinides > div:nth-child(2) > p:nth-child(2) {
+  font-size: 11px;
+  padding-bottom: 5px;
+}
+.Actinides > div:nth-child(2) > p:nth-child(3) {
+  font-size: 8px;
+}
+/* Unknown properties */
+.Unknown_properties {
+  height: 88px;
+  background-color: #E7E7EA;
+  width: 88px;
+  border-radius: 6px;
+}
+.Unknown_properties > div:nth-child(1) > p {
+  padding-left: 6px;
+  padding-top: 6px;
+  color: #3E374D;
+  font-size: 14px;
+  font-weight: bold;
+}
+.Unknown_properties > div:nth-child(2) {
+  text-align: center;
+}
+.Unknown_properties > div:nth-child(2) > p {
+  color: #3E374D;
+}
+.Unknown_properties> div:nth-child(2) > p:nth-child(1) {
+  font-size: 28px;
+  font-weight: 600;
+}
+.Unknown_properties > div:nth-child(2) > p:nth-child(2) {
+  font-size: 11px;
+  padding-bottom: 5px;
+}
+.Unknown_properties > div:nth-child(2) > p:nth-child(3) {
+  font-size: 8px;
+}
