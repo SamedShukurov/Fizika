@@ -34,28 +34,406 @@ header > ul > li > div > a {
 }
 /*! Main */
 .main-body {
-  display: grid;
-  /* grid-template-areas:
-    "H                                                He"
-    "Li Be                                  B C N O F Ne"
-    "So Mg                               Al Si P S Cl Ar"
-    "K  Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr"
-    "Rb Sr Y Zr Nb Mo TC Ru Rh Pd Ag Cd In Sn Sb Te I Xe"
-    "Cs Ba La Hf Ta W Re Os Ir Pt Au Hg Ti Pb Bi Po At Rn"
-    "Fr Ra Ac Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv TS Og"
-    "                   Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu  "
-    "                   Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr";
-  grid-gap: 5px; */
+  width: 95%;
+  margin: 0 auto;
 }
 
 /*Elements */
+.element{
+  height: 65px !important;
+  width: 65px !important;
+}
+.element > div:nth-child(1) > p{
+  font-size: 12px !important;
+}
+.element > div:nth-child(2) > p:nth-child(1){
+  font-size: 20px !important;
+}
+.element > div:nth-child(2) > p:nth-child(2){
+  font-size: 9px !important;
+  padding-bottom: 0px !important;
+  font-weight: 600;
+}
+.element > div:nth-child(2) > p:nth-child(3){
+  font-size: 8px !important;
+  font-weight: 600;
+}
+.elements {
+  display: grid;
+  grid-template-areas: "H . . . . . . . . . . . . . . . . He"
+                       "Li Be . . . . . . . . . . B C N O F Ne"
+                       "So Mg . . . . . . . . . . Al Si P S Cl Ar"
+                       "K Ca Sc Ti V Cr Mn Fe Co Ni Cu Zn Ga Ge As Se Br Kr"
+                       "Rb Sr Y Zr Nb Mo Tc Ru Rh Pd Ag Cd In Sn Sb Te I Xe"
+                       "Cs Ba La Hf Ta W Re Os Ir Pt Au Hg Tl Pb Bi Po At Rn"
+                       "Fr Ra Ac Rf Db Sg Bh Hs Mt Ds Rg Cn Nh Fl Mc Lv Ts Og"
+                       ". . . Ce Pr Nd Pm Sm Eu Gd Tb Dy Ho Er Tm Yb Lu ."
+                       ". . . Th Pa U Np Pu Am Cm Bk Cf Es Fm Md No Lr .";
+  grid-gap: 10px;
+}
+#Sc, #Y , #La , #Ac{
+  margin-left: 50px;
+}
+#H {
+  grid-area: H;
+}
+#He {
+  grid-area: He;
+}
+#Li {
+  grid-area: Li;
+}
+#Be {
+  grid-area: Be;
+}
+#B {
+  grid-area: B;
+}
+#C {
+  grid-area: C;
+}
+#N {
+  grid-area: N;
+}
+#O {
+  grid-area: O;
+}
+#F {
+  grid-area: F;
+}
+#Ne {
+  grid-area: Ne;
+}
+#So {
+  grid-area: So;
+}
+#Mg {
+  grid-area: Mg;
+}
+#Al {
+  grid-area: Al;
+}
+#Si {
+  grid-area: Si;
+}
+#P {
+  grid-area: P;
+}
+#S {
+  grid-area: S;
+}
+#Cl {
+  grid-area: Cl;
+}
+#Ar {
+  grid-area: Ar;
+}
+#K {
+  grid-area: K;
+}
+#Ca {
+  grid-area: Ca;
+}
+#Sc {
+  grid-area: Sc;
+}
+#Ti {
+  grid-area: Ti;
+}
+#V {
+  grid-area: V;
+}
+#Cr {
+  grid-area: Cr;
+}
+#Mn {
+  grid-area: Mn;
+}
+#Fe {
+  grid-area: Fe;
+}
+#Co {
+  grid-area: Co;
+}
+#Ni {
+  grid-area: Ni;
+}
+#Cu {
+  grid-area: Cu;
+}
+#Zn {
+  grid-area: Zn;
+}
+#Ga {
+  grid-area: Ga;
+}
+#Ge {
+  grid-area: Ge;
+}
+#As {
+  grid-area: As;
+}
+#Se {
+  grid-area: Se;
+}
+#Br {
+  grid-area: Br;
+}
+#Kr {
+  grid-area: Kr;
+}
+#Rb {
+  grid-area: Rb;
+}
+#Sr {
+  grid-area: Sr;
+}
+#Y {
+  grid-area: Y;
+}
+#Zr {
+  grid-area: Zr;
+}
+#Nb {
+  grid-area: Nb;
+}
+#Mo {
+  grid-area: Mo;
+}
+#Tc {
+  grid-area: Tc;
+}
+#Ru {
+  grid-area: Ru;
+}
+#Rh {
+  grid-area: Rh;
+}
+#Pd {
+  grid-area: Pd;
+}
+#Ag {
+  grid-area: Ag;
+}
+#Cd {
+  grid-area: Cd;
+}
+#In {
+  grid-area: In;
+}
+#Sn {
+  grid-area: Sn;
+}
+#Sb {
+  grid-area: Sb;
+}
+#Te {
+  grid-area: Te;
+}
+#I {
+  grid-area: I;
+}
+#Xe {
+  grid-area: Xe;
+}
+#Cs {
+  grid-area: Cs;
+}
+#Ba {
+  grid-area: Ba;
+}
+#La {
+  grid-area: La;
+}
+#Hf {
+  grid-area: Hf;
+}
+#Ta{
+  grid-area: Ta;
+}
+#W{
+  grid-area: W;
+}
+#Re{
+  grid-area: Re;
+}
+#Os{
+  grid-area: Os;
+}
+#Ir{
+  grid-area: Ir;
+}
+#Pt{
+  grid-area: Pt;
+}
+#Au{
+  grid-area: Au;
+}
+#Hg{
+  grid-area: Hg;
+}
+#Tl{
+  grid-area: Tl;
+}
+#Pb{
+  grid-area: Pb;
+}
+#Bi{
+  grid-area:Bi;
+}
+#Po{
+  grid-area: Po;
+}
+#At{
+  grid-area: At;
+}
+#Rn{
+  grid-area: Rn;
+}
+#Fr{
+  grid-area: Fr;
+}
+#Ra{
+  grid-area: Ra;
+}
+#Ac{
+  grid-area: Ac;
+}
+#Rf{
+  grid-area: Rf;
+}
+#Db{
+  grid-area: Db;
+}
+#Sg{
+  grid-area: Sg;
+}
+#Bh{
+  grid-area: Bh;
+}
+#Hs{
+  grid-area: Hs;
+}
+#Mt{
+  grid-area: Mt;
+}
+#Ds{
+  grid-area: Ds;
+}
+#Rg{
+  grid-area: Rg;
+}
+#Cn{
+  grid-area: Cn;
+}
+#Nh{
+  grid-area: Nh;
+}
+#Fl{
+  grid-area: Fl;
+}
+#Mc{
+  grid-area: Mc;
+}
+#Lv{
+  grid-area: Lv;
+}
+#Ts{
+  grid-area: Ts;
+}
+#Og{
+  grid-area: Og;
+}
+#Ce{
+  grid-area: Ce;
+}
+#Pr{
+  grid-area: Pr;
+}
+#Nd{
+  grid-area: Nd;
+}
+#Pm{
+  grid-area: Pm;
+}
+#Sm{
+  grid-area: Sm;
+}
+#Eu{
+  grid-area: Eu;
+}
+#Gd{
+  grid-area: Gd;
+}
+#Tb{
+  grid-area: Tb;
+}
+#Dy{
+  grid-area: Dy;
+}
+#Ho{
+  grid-area: Ho;
+}
+#Er{
+  grid-area: Er;
+}
+#Tm{
+  grid-area: Tm;
+}
+#Yb{
+  grid-area: Yb;
+}
+#Lu{
+  grid-area: Lu;
+}
+#Th{
+  grid-area: Th;
+}
+#Pa{
+  grid-area: Pa;
+}
+#U{
+  grid-area: U;
+}
+#Np{
+  grid-area: Np;
+}
+#Pu{
+  grid-area: Pu;
+}
+#Am{
+  grid-area: Am;
+}
+#Cm{
+  grid-area: Cm;
+}
+#Bk{
+  grid-area: Bk;
+}
+#Cf{
+  grid-area: Cf;
+}
+#Es{
+  grid-area: Es;
+}
+#Fm{
+  grid-area: Fm;
+}
+#Md{
+  grid-area: Md;
+}
+#No{
+  grid-area: No;
+}
+#Lr{
+  grid-area: Lr;
+}
 
 /* Reactive_nonmetals */
 .Reactive_nonmetals {
   height: 88px;
   background-color: #e4eefd;
   width: 88px;
-
   border-radius: 6px;
 }
 .Reactive_nonmetals > div:nth-child(1) > p {
@@ -68,7 +446,7 @@ header > ul > li > div > a {
 .Reactive_nonmetals > div:nth-child(2) {
   text-align: center;
 }
-.Reactive_nonmetals> div:nth-child(2) > p {
+.Reactive_nonmetals > div:nth-child(2) > p {
   color: #2163e7;
 }
 .Reactive_nonmetals > div:nth-child(2) > p:nth-child(1) {
@@ -86,15 +464,14 @@ header > ul > li > div > a {
 /* Noble gases */
 .Noble_gases {
   height: 88px;
-  background-color: #FBE8EB;
+  background-color: #fbe8eb;
   width: 88px;
-
   border-radius: 6px;
 }
 .Noble_gases > div:nth-child(1) > p {
   padding-left: 6px;
   padding-top: 6px;
-  color: #BC335F;
+  color: #bc335f;
   font-size: 14px;
   font-weight: bold;
 }
@@ -102,7 +479,7 @@ header > ul > li > div > a {
   text-align: center;
 }
 .Noble_gases > div:nth-child(2) > p {
-  color: #BC335F;
+  color: #bc335f;
 }
 .Noble_gases > div:nth-child(2) > p:nth-child(1) {
   font-size: 28px;
@@ -118,7 +495,7 @@ header > ul > li > div > a {
 /* Alkali_metals */
 .Alkali_metals {
   height: 88px;
-  background-color: #DEF7FE;
+  background-color: #def7fe;
   width: 88px;
   border-radius: 6px;
 }
@@ -149,14 +526,14 @@ header > ul > li > div > a {
 /* Alkaline earth metals */
 .Alkaline_earth_metals {
   height: 88px;
-  background-color: #FBE8E7;
+  background-color: #fbe8e7;
   width: 88px;
   border-radius: 6px;
 }
 .Alkaline_earth_metals > div:nth-child(1) > p {
   padding-left: 6px;
   padding-top: 6px;
-  color: #C4292E;
+  color: #c4292e;
   font-size: 14px;
   font-weight: bold;
 }
@@ -164,9 +541,9 @@ header > ul > li > div > a {
   text-align: center;
 }
 .Alkaline_earth_metals > div:nth-child(2) > p {
-  color: #C4292E;
+  color: #c4292e;
 }
-.Alkaline_earth_metals> div:nth-child(2) > p:nth-child(1) {
+.Alkaline_earth_metals > div:nth-child(2) > p:nth-child(1) {
   font-size: 28px;
   font-weight: 600;
 }
@@ -180,14 +557,14 @@ header > ul > li > div > a {
 /* Metalloids */
 .Metalloids {
   height: 88px;
-  background-color: #FDF7E2;
+  background-color: #fdf7e2;
   width: 88px;
   border-radius: 6px;
 }
 .Metalloids > div:nth-child(1) > p {
   padding-left: 6px;
   padding-top: 6px;
-  color: #8C591D;
+  color: #8c591d;
   font-size: 14px;
   font-weight: bold;
 }
@@ -195,9 +572,9 @@ header > ul > li > div > a {
   text-align: center;
 }
 .Metalloids > div:nth-child(2) > p {
-  color: #8C591D;
+  color: #8c591d;
 }
-.Metalloids> div:nth-child(2) > p:nth-child(1) {
+.Metalloids > div:nth-child(2) > p:nth-child(1) {
   font-size: 28px;
   font-weight: 600;
 }
@@ -211,14 +588,14 @@ header > ul > li > div > a {
 /* Post_transition_metals */
 .Post_transition_metals {
   height: 88px;
-  background-color: #DDF8E9;
+  background-color: #ddf8e9;
   width: 88px;
   border-radius: 6px;
 }
 .Post_transition_metals > div:nth-child(1) > p {
   padding-left: 6px;
   padding-top: 6px;
-  color: #0E2B06;
+  color: #0e2b06;
   font-size: 14px;
   font-weight: bold;
 }
@@ -226,9 +603,9 @@ header > ul > li > div > a {
   text-align: center;
 }
 .Post_transition_metals > div:nth-child(2) > p {
-  color: #0E2B06;
+  color: #0e2b06;
 }
-.Post_transition_metals> div:nth-child(2) > p:nth-child(1) {
+.Post_transition_metals > div:nth-child(2) > p:nth-child(1) {
   font-size: 28px;
   font-weight: 600;
 }
@@ -242,14 +619,14 @@ header > ul > li > div > a {
 /* Transition metals */
 .Transition_metals {
   height: 88px;
-  background-color: #F1E8FB;
+  background-color: #f1e8fb;
   width: 88px;
   border-radius: 6px;
 }
 .Transition_metals > div:nth-child(1) > p {
   padding-left: 6px;
   padding-top: 6px;
-  color: #5A3EE3;
+  color: #5a3ee3;
   font-size: 14px;
   font-weight: bold;
 }
@@ -257,9 +634,9 @@ header > ul > li > div > a {
   text-align: center;
 }
 .Transition_metals > div:nth-child(2) > p {
-  color: #5A3EE3;
+  color: #5a3ee3;
 }
-.Transition_metals> div:nth-child(2) > p:nth-child(1) {
+.Transition_metals > div:nth-child(2) > p:nth-child(1) {
   font-size: 28px;
   font-weight: 600;
 }
@@ -273,7 +650,7 @@ header > ul > li > div > a {
 /* Lanthanides */
 .Lanthanides {
   height: 88px;
-  background-color: #E3F2FE;
+  background-color: #e3f2fe;
   width: 88px;
   border-radius: 6px;
 }
@@ -290,7 +667,7 @@ header > ul > li > div > a {
 .Lanthanides > div:nth-child(2) > p {
   color: #113352;
 }
-.Lanthanides> div:nth-child(2) > p:nth-child(1) {
+.Lanthanides > div:nth-child(2) > p:nth-child(1) {
   font-size: 28px;
   font-weight: 600;
 }
@@ -304,14 +681,14 @@ header > ul > li > div > a {
 /* Actinides */
 .Actinides {
   height: 88px;
-  background-color: #FBE7D6;
+  background-color: #fbe7d6;
   width: 88px;
   border-radius: 6px;
 }
 .Actinides > div:nth-child(1) > p {
   padding-left: 6px;
   padding-top: 6px;
-  color: #B83E1D;
+  color: #b83e1d;
   font-size: 14px;
   font-weight: bold;
 }
@@ -319,9 +696,9 @@ header > ul > li > div > a {
   text-align: center;
 }
 .Actinides > div:nth-child(2) > p {
-  color: #B83E1D;
+  color: #b83e1d;
 }
-.Actinides> div:nth-child(2) > p:nth-child(1) {
+.Actinides > div:nth-child(2) > p:nth-child(1) {
   font-size: 28px;
   font-weight: 600;
 }
@@ -335,14 +712,14 @@ header > ul > li > div > a {
 /* Unknown properties */
 .Unknown_properties {
   height: 88px;
-  background-color: #E7E7EA;
+  background-color: #e7e7ea;
   width: 88px;
   border-radius: 6px;
 }
 .Unknown_properties > div:nth-child(1) > p {
   padding-left: 6px;
   padding-top: 6px;
-  color: #3E374D;
+  color: #3e374d;
   font-size: 14px;
   font-weight: bold;
 }
@@ -350,9 +727,9 @@ header > ul > li > div > a {
   text-align: center;
 }
 .Unknown_properties > div:nth-child(2) > p {
-  color: #3E374D;
+  color: #3e374d;
 }
-.Unknown_properties> div:nth-child(2) > p:nth-child(1) {
+.Unknown_properties > div:nth-child(2) > p:nth-child(1) {
   font-size: 28px;
   font-weight: 600;
 }
