@@ -40,8 +40,8 @@ header > ul > li > div > a {
 
 /*Elements */
 .element{
-  height: 65px !important;
-  width: 65px !important;
+  height: 70px !important;
+  width: 70px !important;
 }
 .element > div:nth-child(1) > p{
   font-size: 12px !important;
