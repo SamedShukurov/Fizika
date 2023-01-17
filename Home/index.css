@@ -15,7 +15,9 @@ header {
   background-color: deeppink;
   display: flex;
   justify-content: space-around;
+  transition: all 1s;
 }
+header 
 header > div {
   width: 100px;
   padding-top: 5px;
@@ -31,8 +33,16 @@ header > ul {
 header > ul > li > div > a {
   color: white;
   font-weight: 400;
+  transition: all 2s;
+}
+header > ul > li > div > a:hover  {
+  color: black;
 }
 /*! Main */
+main{
+  padding-top:50px ;
+  padding-bottom:50px ;
+}
 .main-body {
   width: 95%;
   margin: 0 auto;
@@ -740,3 +750,5 @@ header > ul > li > div > a {
 .Unknown_properties > div:nth-child(2) > p:nth-child(3) {
   font-size: 8px;
 }
+
+
